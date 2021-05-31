@@ -10,19 +10,29 @@
         android:id="@+id/exercise1"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:text="exercise1"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="20dp"
+        android:text="exercise1"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/exercise2"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:text="exercise2"
-        app:layout_constraintTop_toBottomOf="@id/exercise1"
         android:layout_marginTop="10dp"
-        app:layout_constraintLeft_toLeftOf="@id/exercise1"/>
+        android:text="exercise2"
+        app:layout_constraintLeft_toLeftOf="@id/exercise1"
+        app:layout_constraintTop_toBottomOf="@id/exercise1" />
+
+    <Button
+        android:id="@+id/exercise3"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="exercise3"
+        app:layout_constraintLeft_toLeftOf="@id/exercise1"
+        app:layout_constraintTop_toBottomOf="@id/exercise2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
