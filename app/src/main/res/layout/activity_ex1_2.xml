@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ex1.Ex1_2Activity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="世界杯预测"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="小组:"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="60dp"/>
+
+    <TextView
+        android:id="@+id/group_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="23sp"
+        app:layout_constraintTop_toTopOf="@id/group"
+        app:layout_constraintLeft_toRightOf="@id/result"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/main_team"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="主队:"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/group"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="60dp"/>
+
+    <TextView
+        android:id="@+id/main_team_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="23sp"
+        app:layout_constraintTop_toTopOf="@id/main_team"
+        app:layout_constraintLeft_toRightOf="@id/result"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/guest_team"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="客队:"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/main_team"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="60dp"/>
+
+    <TextView
+        android:id="@+id/guest_team_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="23sp"
+        app:layout_constraintTop_toTopOf="@id/guest_team"
+        app:layout_constraintLeft_toRightOf="@id/result"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="比赛结果:"
+        android:textSize="23sp"
+        app:layout_constraintRight_toRightOf="@id/guest_team"
+        app:layout_constraintTop_toBottomOf="@id/guest_team"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="23sp"
+        app:layout_constraintTop_toTopOf="@id/result"
+        app:layout_constraintLeft_toRightOf="@id/result"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="返回"
+        app:layout_constraintTop_toBottomOf="@id/result"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
