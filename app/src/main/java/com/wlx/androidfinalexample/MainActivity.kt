@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.wlx.androidfinalexample.ex1.Ex1_1Activity
 import com.wlx.androidfinalexample.ex2.Ex2Activity
 import com.wlx.androidfinalexample.ex3.Ex3Activity
+import com.wlx.androidfinalexample.ex4.Ex4Activity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,6 +26,11 @@ class MainActivity : AppCompatActivity() {
         val exercise3: Button = findViewById(R.id.exercise3)
         exercise3.setOnClickListener {
             val intent = Intent(this, Ex3Activity::class.java)
+            startActivity(intent)
+        }
+        val exercise4: Button = findViewById(R.id.exercise4)
+        exercise4.setOnClickListener {
+            val intent = Intent(this, Ex4Activity::class.java)
             startActivity(intent)
         }
     }

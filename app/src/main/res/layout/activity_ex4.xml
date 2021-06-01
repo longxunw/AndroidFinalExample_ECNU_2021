@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ex4.Ex4Activity">
+
+    <TextView
+        android:id="@+id/now_location"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="       "
+        android:textSize="15sp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/to_ecnu"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="前往华东师范大学"
+        app:layout_constraintTop_toBottomOf="@id/now_location"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clickable="true"
+        app:layout_constraintTop_toBottomOf="@id/to_ecnu"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
