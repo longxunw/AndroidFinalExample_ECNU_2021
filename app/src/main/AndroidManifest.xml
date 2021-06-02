@@ -21,11 +21,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidFinalExample">
+        <activity android:name=".ex6.Ex6Activity"></activity>
+
+        <receiver
+            android:name=".ex5.Ex5Receiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.wlx.androidfinalexample.ex5.broadcast" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".ex5.Ex5BActivity" />
+        <activity android:name=".ex5.Ex5Activity" />
+
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="YkFaxz8wB2MzpF2SekzpsG1gcoyyAQWi" />
 
-        <activity android:name=".ex4.Ex4Activity"></activity>
+        <activity android:name=".ex4.Ex4Activity" />
         <activity android:name=".ex3.Ex3Activity" />
         <activity android:name=".ex2.Ex2Activity" />
         <activity android:name=".ex1.Ex1_2Activity" />
