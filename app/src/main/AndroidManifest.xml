@@ -21,7 +21,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidFinalExample">
-        <activity android:name=".ex8.Ex8Activity"></activity>
+        <activity android:name=".ex9.Ex9BActivity"></activity>
+        <activity android:name=".ex9.Ex9Activity" />
+        <activity android:name=".ex8.Ex8Activity" />
 
         <service
             android:name=".ex7.Ex7Service"
