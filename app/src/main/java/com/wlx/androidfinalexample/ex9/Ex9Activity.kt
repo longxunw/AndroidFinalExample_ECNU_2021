@@ -15,7 +15,7 @@ class Ex9Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ex9)
-        val dbHelper = MyDatabaseHelper(this, "Exercise.db", 1)
+        val dbHelper = MyDatabaseHelper(this, "Exercise.db", 2)
         val launchBtn: Button = findViewById(R.id.launch)
         val displayBtn: Button = findViewById(R.id.display)
         launchBtn.setOnClickListener {

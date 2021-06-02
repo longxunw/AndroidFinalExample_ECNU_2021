@@ -12,14 +12,6 @@ import java.util.*
 
 class Ex7Service : Service() {
     private val TAG = "Ex7Service"
-
-    //    private val thread = Thread {
-//        while (!Thread.currentThread().isInterrupted) {
-//            val date = Date()
-//            Toast.makeText(applicationContext, "hello $date", Toast.LENGTH_SHORT).show()
-//            Thread.sleep(10000)
-//        }
-//    }
     inner class Ex7Thread : Thread() {
         override fun run() {
             try {

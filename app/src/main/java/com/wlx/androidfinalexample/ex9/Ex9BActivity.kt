@@ -12,7 +12,7 @@ class Ex9BActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ex9_b)
-        val dbHelper = MyDatabaseHelper(this, "Exercise.db", 1)
+        val dbHelper = MyDatabaseHelper(this, "Exercise.db", 2)
         val db = dbHelper.writableDatabase
         val sql = "select * from contact order by name asc"
         val cursor = db.rawQuery(sql, null)

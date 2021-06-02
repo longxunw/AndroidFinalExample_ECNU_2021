@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.wlx.androidfinalexample.ex1.Ex1_1Activity
+import com.wlx.androidfinalexample.ex10.Ex10Activity
+import com.wlx.androidfinalexample.ex11.Ex11Activity
 import com.wlx.androidfinalexample.ex2.Ex2Activity
 import com.wlx.androidfinalexample.ex3.Ex3Activity
 import com.wlx.androidfinalexample.ex4.Ex4Activity
@@ -61,6 +63,16 @@ class MainActivity : AppCompatActivity() {
         val exercise9: Button = findViewById(R.id.exercise9)
         exercise9.setOnClickListener {
             val intent = Intent(this, Ex9Activity::class.java)
+            startActivity(intent)
+        }
+        val exercise10: Button = findViewById(R.id.exercise10)
+        exercise10.setOnClickListener {
+            val intent = Intent(this, Ex10Activity::class.java)
+            startActivity(intent)
+        }
+        val exercise11: Button = findViewById(R.id.exercise11)
+        exercise11.setOnClickListener {
+            val intent = Intent(this, Ex11Activity::class.java)
             startActivity(intent)
         }
     }

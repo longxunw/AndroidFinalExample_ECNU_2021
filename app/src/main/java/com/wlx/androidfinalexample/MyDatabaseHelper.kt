@@ -13,13 +13,29 @@ class MyDatabaseHelper(val context: Context, name: String, version: Int) :
             "phone_num text," +
             "email text)"
 
+    private val createEx10 = "create table ex10 (" +
+            " string text)"
+
+    private val createEx11 = "create table ex11 (" +
+            " num integer)"
+
+
     override fun onCreate(db: SQLiteDatabase?) {
-        db?.execSQL(createContact)
+        db?.let {
+            db.execSQL(createContact)
+            db.execSQL(createEx10)
+            db.execSQL(createEx11)
+        }
 
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
-        TODO("Not yet implemented")
+        if (oldVersion == 1 && newVersion == 2) {
+            db?.let {
+                db.execSQL(createEx10)
+                db.execSQL(createEx11)
+            }
+        }
     }
 
 }

@@ -89,5 +89,23 @@
         app:layout_constraintLeft_toLeftOf="@id/exercise1"
         app:layout_constraintTop_toBottomOf="@id/exercise8" />
 
+    <Button
+        android:id="@+id/exercise10"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="exercise10"
+        app:layout_constraintLeft_toLeftOf="@id/exercise1"
+        app:layout_constraintTop_toBottomOf="@id/exercise9" />
+
+    <Button
+        android:id="@+id/exercise11"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="exercise11"
+        app:layout_constraintLeft_toLeftOf="@id/exercise1"
+        app:layout_constraintTop_toBottomOf="@id/exercise10" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

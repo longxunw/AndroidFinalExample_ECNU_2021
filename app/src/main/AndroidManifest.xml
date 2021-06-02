@@ -21,7 +21,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidFinalExample">
-        <activity android:name=".ex9.Ex9BActivity"></activity>
+
+        <service
+            android:name=".ex11.Ex11Service"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".ex11.Ex11Activity" />
+        <activity android:name=".ex10.Ex10Activity" />
+        <activity android:name=".ex9.Ex9BActivity" />
         <activity android:name=".ex9.Ex9Activity" />
         <activity android:name=".ex8.Ex8Activity" />
 
